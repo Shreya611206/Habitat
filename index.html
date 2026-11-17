@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="habitat">HABITAT</h1>
+</header>
+
+<main>
+    <section id="game-scene">
+        <div class="scene-window">
+            
+            <div id="base-dome" class="structure">Dome</div>
+            <div id="solar-array" class="structure">Solar</div>
+            <div id="agri-greenhouse" class="structure">Farm</div>
+            <div id="o2-plant" class="structure">Oxygen</div>
+            
+            
+            
+        </div>
+    </section>
+
+    <section id="dashboard">
+        <h2>System Status</h2>
+        <div class="resource-panel">
+   
+    <div class="resource-item">
+        <div class="resource-icon">O<sub>2</sub></div>
+        <div class="bar-track">
+            <div class="bar-fill" id="oxygen-fill" style="width: 100%;"></div>
+            <span class="bar-text"><span id="oxygen-level">100</span>%</span>
+        </div>
+    </div>
+     <div class="resource-item">
+        <div class="resource-icon">ENERGY</div>
+        <div class="bar-track">
+            <div class="bar-fill" id="energy-fill" style="width: 100%;"></div>
+            <span class="bar-text"><span id="energy-level">100</span>%</span>
+        </div>
+    </div>
+     <div class="resource-item">
+        <div class="resource-icon">FOOD</div>
+        <div class="bar-track">
+            <div class="bar-fill" id="food-fill" style="width: 100%;"></div>
+            <span class="bar-text"><span id="food-level">10</span></span>
+        </div>
+    </div>
+
+    
+    <div class="resource-item">
+        <div class="resource-icon">POWER</div>
+        <div class="bar-track">
+            <div class="bar-fill" id="power-fill" style="width: 100%;"></div>
+            <span class="bar-text"><span id="power-level">100</span>%</span>    
+        </div>
+    </div>
+
+</div>
+    </section>
+    <section id="action-panel">
+        <h2>Actions</h2>
+        <div class="button-group">
+            <button id="btn-eat">Eat</button>
+            <button id="btn-rest">Rest</button>
+            <button id="btn-repair">Repair Solar Panel</button>
+            <button id="btn-oxygen">O<sub>2</sub> Refill</button>
+            <button id="btn-greenhouse">Operate Greenhouse</button>
+        </div>
+    </section>
+</main>
+<div id="game-over-screen" class="hidden">
+        <div class="modal-content">
+            <h2 id="end-title">CRITICAL FAILURE</h2>
+            <p id="end-message">A critical resource has depleted. The simulation has ended.</p>
+            <div class="modal-buttons">
+                <button id="btn-restart">Restart</button>
+                <button id="btn-quit">Quit</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
