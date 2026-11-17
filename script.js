@@ -108,7 +108,7 @@ function o2Refil(){
 function gameTick() {
     
     oxygen = oxygen - 5;
-    food = food - 1;
+    food = food - 2;
     energy = energy - 1; 
     if(oxygen<=0)oxygen=0;
     if(food<=0)food=0;
